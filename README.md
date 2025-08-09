@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Random Fruit Viewer</title>
   <style>
     body {
@@ -26,47 +26,23 @@
   </style>
 </head>
 <body>
-
   <img id="fruitImage" src="" alt="Random Fruit">
   <h1 id="fruitName"></h1>
 
   <script>
     const fruits = [
-      {
-        name: "Apple",
-        image: "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg"
-      },
-      {
-        name: "Banana",
-        image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg"
-      },
-      {
-        name: "Orange",
-        image: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
-      },
-      {
-        name: "Strawberry",
-        image: "https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg"
-      },
-      {
-        name: "Pineapple",
-        image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pineapple_and_cross_section.jpg"
-      },
-      {
-        name: "Mango",
-        image: "https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg"
-      },
-      {
-        name: "Grapes",
-        image: "https://upload.wikimedia.org/wikipedia/commons/3/36/Kyoho-grape.jpg"
-      }
+      { name: "Apple", image: "https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" },
+      { name: "Banana", image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" },
+      { name: "Orange", image: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg" },
+      { name: "Strawberry", image: "https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg" },
+      { name: "Pineapple", image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Pineapple_and_cross_section.jpg" },
+      { name: "Mango", image: "https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg" },
+      { name: "Grapes", image: "https://upload.wikimedia.org/wikipedia/commons/3/36/Kyoho-grape.jpg" }
     ];
-
     const randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
     document.getElementById("fruitImage").src = randomFruit.image;
     document.getElementById("fruitImage").alt = randomFruit.name;
     document.getElementById("fruitName").textContent = randomFruit.name;
   </script>
-
 </body>
 </html>
