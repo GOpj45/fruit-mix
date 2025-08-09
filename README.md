@@ -1,5 +1,4 @@
-# fruit-mix 
-<!DOCTYPE html>
+# fruit-mix
 <html lang="en">
 <head>
   <meta charset="UTF-8">
